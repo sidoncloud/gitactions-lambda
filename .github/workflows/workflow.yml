@@ -9,6 +9,10 @@ env:
   LAMBDA_FUNCTION_NAME: MySimpleLambdaFunction
   AWS_ROLE_TO_ASSUME: arn:aws:iam::127489365181:role/gitaction-lambda-role
 
+permissions:
+  id-token: write
+  contents: read
+  
 jobs:
   deploy:
     name: Deploy Lambda
