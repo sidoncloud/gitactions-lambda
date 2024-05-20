@@ -8,7 +8,7 @@ on:
 env:
   AWS_REGION: us-east-1
   LAMBDA_FUNCTION_NAME: MySimpleLambdaFunction
-  AWS_ROLE_TO_ASSUME: arn:aws:iam::127489365181:role/gitaction-lambda-role
+  AWS_ROLE_TO_ASSUME: arn:aws:iam::127489365181:role/lambda_dynamo_s3_role
 
 permissions:
   id-token: write
